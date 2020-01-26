@@ -46,6 +46,7 @@ class ArrayCollectionTest {
         assertTrue(testInstance.contains(1));
         assertFalse(testInstance.contains(0));
     }
+
     @Test
     public void testIterator() {
         final Collection<Integer> testInstance = new ArrayCollection<>();
@@ -53,10 +54,8 @@ class ArrayCollectionTest {
             testInstance.add(i);
         }
         int i = 0;
-        System.out.println("\n testIterator");
-        System.out.format("Size: %s\n", testInstance.size());
         for (final Integer iT : testInstance) {
-            System.out.format("Element %s: %s \n", i++, iT);
+            i++;
         }
         if (i != testInstance.size()) {
             throw new RuntimeException("ElementsIterator don't working!!!!");
@@ -185,10 +184,10 @@ class ArrayCollectionTest {
         testInstance.add(8);
         testInstance.add(9);
 
-        testInstance2.add(3); //0 size1
-        testInstance2.add(4); //1 size2
-        testInstance2.add(5); //2 size3
-        testInstance2.add(6); //3 size4
+        testInstance2.add(3);
+        testInstance2.add(4);
+        testInstance2.add(5);
+        testInstance2.add(6);
 
         testInstance.retainAll(testInstance2);
 
@@ -213,10 +212,10 @@ class ArrayCollectionTest {
         testInstance.add(8);
         testInstance.add(9);
 
-        testInstance2.add(3); //0 size1
-        testInstance2.add(4); //1 size2
-        testInstance2.add(5); //2 size3
-        testInstance2.add(6); //3 size4
+        testInstance2.add(3);
+        testInstance2.add(4);
+        testInstance2.add(5);
+        testInstance2.add(6);
 
         testInstance.retainAll(testInstance2);
 
@@ -241,10 +240,10 @@ class ArrayCollectionTest {
         testInstance.add(8);
         testInstance.add(9);
 
-        testInstance2.add(3); //0 size1
-        testInstance2.add(4); //1 size2
-        testInstance2.add(5); //2 size3
-        testInstance2.add(6); //3 size4
+        testInstance2.add(3);
+        testInstance2.add(4);
+        testInstance2.add(5);
+        testInstance2.add(6);
 
         testInstance.retainAll(testInstance2);
 
