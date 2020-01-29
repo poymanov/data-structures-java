@@ -4,5 +4,5 @@ services:
     image: maven:3.6.3-jdk-11-slim
     volumes:
       - .:/app
+      - ~/.m2:/root/.m2
     working_dir: /app
-    command: mvn test

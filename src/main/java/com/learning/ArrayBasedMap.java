@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ArrayBasedMap<K, V> implements Map<K, V> {
 
-    private List<Pair> KeyAndValues = new ArrayList<Pair>();
+    private List<Pair> KeyAndValues = new ArrayList<>();
 
     @Override
     public int size() {
